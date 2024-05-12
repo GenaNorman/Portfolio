@@ -1,0 +1,114 @@
+// .container2__photo {
+//   animation: movingimage infinite;
+// }
+// @keyframes movingimage {
+//   0% {
+//     opacity: 0;
+//     transform: scaleX(1);
+//   }
+
+//   // 80% {
+//   //     transform: translateX(1rem);
+//   // }
+
+//   100% {
+//     opacity: 1;
+//     transform: scale(1.5);
+//   }
+// }
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+.years {
+  animation: counter 5s infinite alternate ease-in-out;
+  counter-reset: num var(--num);
+  font: 800 40px system-ui;
+  padding: 2rem;
+}
+.years::before {
+  content: counter(num);
+}
+
+@keyframes counter {
+  from {
+    --num: 100;
+  }
+  to {
+    --num: 0;
+  }
+}
+
+// ////////////projects
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+.projects {
+  animation: counter 5s infinite alternate ease-in-out;
+  counter-reset: num var(--num);
+  font: 800 40px system-ui;
+  padding: 2rem;
+}
+.projects::before {
+  content: counter(num);
+}
+
+@keyframes counter {
+  from {
+    --num: 100;
+  }
+  to {
+    --num: 0;
+  }
+}
+//   /////////////////////clients
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+.clients {
+  animation: counter 5s infinite alternate ease-in-out;
+  counter-reset: num var(--num);
+  font: 800 40px system-ui;
+  padding: 2rem;
+}
+.clients::before {
+  content: counter(num);
+}
+
+@keyframes counter {
+  from {
+    --num: 200;
+  }
+  to {
+    --num: 0;
+  }
+}
+//   ///////////////////experience
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+.experience {
+  animation: counter 5s infinite alternate ease-in-out;
+  counter-reset: num var(--num);
+  font: 800 40px system-ui;
+  padding: 2rem;
+}
+.experience::before {
+  content: counter(num);
+}
+
+@keyframes counter {
+  from {
+    --num: 100;
+  }
+  to {
+    --num: 0;
+  }
+}

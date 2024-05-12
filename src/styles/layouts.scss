@@ -5,4 +5,11 @@
 }
 .container {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.counter {
+  display: flex;
+  justify-content: space-evenly;
+  color: var(--color-primary);
 }

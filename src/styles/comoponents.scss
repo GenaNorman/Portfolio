@@ -37,3 +37,57 @@
     }
   }
 }
+
+.container1 {
+  width: 50%;
+  margin-top: 10%;
+  &__username {
+    font-size: 2rem;
+    font-weight: 600;
+
+    color: var(--color-secondary);
+  }
+  &__devtype {
+    font-size: 4rem;
+    line-height: 4.8rem;
+
+    background: linear-gradient(to right, var(--color-gradient));
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  &__slogan {
+    // color: rebeccapurple;
+  }
+  &__media {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    margin-top: 4rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--color-primary);
+    border-radius: 30rem;
+    width: max-content;
+    &-twitter {
+    }
+    &-linkedin {
+    }
+    &-github {
+    }
+    &-gram {
+    }
+  }
+}
+.container2 {
+  width: 50%; //   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__photo {
+    width: 60%;
+    margin-top: 4rem;
+    border-radius: 3rem;
+    background-blend-mode: screen;
+  }
+}
