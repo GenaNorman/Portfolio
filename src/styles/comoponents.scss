@@ -1,0 +1,39 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  &__logo-icon {
+    font-family: black ops one;
+    font-weight: 900;
+    font-size: 4rem;
+    color: var(--color-primary);
+  }
+  &__logo-name {
+    font-weight: 900;
+    font-size: 2.1rem;
+    color: var(--color-secondary);
+  }
+
+  //   NAVIGATION LINK
+  &__navigation {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+
+    font-weight: 500;
+    position: relative;
+
+    &-link {
+      cursor: pointer;
+      color: var(--color-secondary);
+    }
+    &-link::before {
+      content: "";
+      color: red;
+      position: absolute;
+      top: 10%;
+      height: 1rem;
+      width: 5rem;
+    }
+  }
+}
