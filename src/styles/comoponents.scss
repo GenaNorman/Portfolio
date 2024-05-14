@@ -16,12 +16,14 @@
       width: 100%;
     }
     .header__logo--mobile {
+      display: none;
       @media only screen and (max-width: 412px) {
         margin-left: auto;
         font-size: 1.8rem;
       }
     }
     .header__logo--navbar {
+      display: none;
       @media only screen and (max-width: 412px) {
         font-size: 5rem;
         font-weight: 700;
@@ -79,15 +81,15 @@
       transform: translateX(100%);
     }
     &__navigation--open {
+      position: absolute;
+      top: 7rem;
+      height: 100vh;
+      width: 100%;
+      padding-left: 2rem;
+      background-color: indianred;
+      transform: translateX(-100%);
+      transition: 5s;
       @media only screen and (max-width: 412px) {
-        position: absolute;
-        top: 7rem;
-        height: 100vh;
-        width: 100%;
-        padding-left: 2rem;
-        background-color: indianred;
-        transform: translateX(-100%);
-        transition: 5s;
       }
     }
     &-link {
