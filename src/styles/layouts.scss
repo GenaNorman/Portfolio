@@ -39,8 +39,12 @@
   }
   &__slogan {
     text-align: center;
+    width: 48%;
     @media only screen and (max-width: 536px) {
       font-size: 1.2rem;
+    }
+    @media only screen and (max-width: 412px) {
+      width: 85%;
     }
   }
   &__name--small {

@@ -7,7 +7,7 @@ export default function Myquality() {
         <h1 className="title__name">My quality services</h1>
         <p className="title__slogan">
           We put your ideas and thus your wishes in the form of a unique web
-          project that <br /> inspires you and you customers.
+          project that inspires you and you customers.
         </p>
       </div>
       <div className="services">
