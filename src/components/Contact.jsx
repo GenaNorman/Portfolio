@@ -1,4 +1,7 @@
 import React from "react";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaPhone } from "react-icons/fa6";
+import { MdEmail } from "react-icons/md";
 
 export default function Contact() {
   return (
@@ -58,21 +61,27 @@ export default function Contact() {
         </div>
         <div className="contact__box--right">
           <div className="contact__box--right-phone">
-            <p className="call">c</p>
+            <p className="call">
+              <FaPhone />
+            </p>
             <div>
-              <p>Phone</p>
+              <p>Call</p>
               <p className="bold">678589305</p>
             </div>
           </div>
           <div className="contact__box--right-Email">
-            <p className="call">E</p>
+            <p className="call">
+              <MdEmail />
+            </p>
             <div>
               <p>Email</p>
               <p className="bold">normankamando@gmail.com</p>
             </div>
           </div>
           <div className="contact__box--right-Address">
-            <p className="call">A</p>
+            <p className="call">
+              <FaLocationDot />
+            </p>
             <div>
               <p>Address</p>
               <p className="bold">South-west buea</p>

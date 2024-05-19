@@ -1,4 +1,9 @@
 import React, { useState } from "react";
+import { FaLinkedin } from "react-icons/fa";
+import { RiMenu3Fill } from "react-icons/ri";
+import { FaTwitter, FaWhatsapp, FaGithub } from "react-icons/fa";
+
+import { RxCross2 } from "react-icons/rx";
 
 export default function Head() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,12 +22,10 @@ export default function Head() {
             Hire me!
           </a>
           <p className="header__logo--navbar" onClick={sidebarslider}>
-            =
+            {isOpen ? <RxCross2 /> : <RiMenu3Fill />}
           </p>
         </div>
-        <nav
-          className={isOpen ? "header__navigation--open" : "header__navigation"}
-        >
+        <nav className="header__navigation">
           <li className="header__navigation-link">Services</li>
           <li className="header__navigation-link">Work</li>
           <li className="header__navigation-link">Resume</li>
@@ -33,10 +36,18 @@ export default function Head() {
             Hire me!
           </a>
         </nav>
+        <nav className={isOpen ? "movein-right" : "mobile__navigation"}>
+          <li className="mobile__navigation-link">Services</li>
+          <li className="mobile__navigation-link">Work</li>
+          <li className="mobile__navigation-link">Resume</li>
+          <li className="mobile__navigation-link">Skills</li>
+          <li className="mobile__navigation-link">Testimonials</li>
+          <li className="mobile__navigation-link">Contacts</li>
+        </nav>
       </header>
       <div className="container">
         <div className="container1">
-          <p className="container1__username">Hi am Norman</p>
+          <p className="container1__username">Hi there I'm Norman your</p>
           <h1 className="container1__devtype">Web developer + UX Designer</h1>
           <i className="container__slogan">
             I break down complex 1user experinece problems to create integritiy
@@ -48,10 +59,18 @@ export default function Head() {
             <a href="download" className="btn cv">
               Download cv
             </a>
-            <i className="container1__media-twiter">TW</i>
-            <i className="container1__media-linkedin">L N</i>
-            <i className="container1__media-github">GH</i>
-            <i className="container1__media-gram">WA</i>
+            <i className="container1__media-twiter">
+              <FaTwitter />
+            </i>
+            <i className="container1__media-linkedin">
+              <FaLinkedin />
+            </i>
+            <i className="container1__media-github">
+              <FaGithub />
+            </i>
+            <i className="container1__media-gram">
+              <FaWhatsapp />
+            </i>
           </div>
         </div>
         <div className="container2">

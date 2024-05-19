@@ -30,6 +30,7 @@
         font-size: 5rem;
         font-weight: 700;
         margin-left: 1rem;
+        line-height: 0;
       }
     }
   }
@@ -61,27 +62,12 @@
     align-items: center;
     gap: 3rem;
 
-    position: relative;
     font-weight: 500;
 
     @media only screen and (max-width: 536px) {
       gap: 2rem;
     }
 
-    @media only screen and (max-width: 412px) {
-      display: flex;
-      flex-direction: column;
-      position: absolute;
-      top: 7rem;
-
-      background-image: linear-gradient(to bottom right, var(--color-gradient));
-      width: 100%;
-      height: 100vh;
-      padding-left: 2rem;
-      transition: 3s;
-
-      transform: translateX(100%);
-    }
     &__navigation--open {
       position: absolute;
       top: 7rem;
@@ -91,14 +77,13 @@
       background-color: indianred;
       transform: translateX(-100%);
       transition: 5s;
-      @media only screen and (max-width: 412px) {
-      }
     }
     &-link {
       cursor: pointer;
       color: var(--color-secondary);
 
       @media only screen and (max-width: 412px) {
+        display: none;
         color: white;
         align-self: start;
         padding-top: 3rem;
@@ -106,6 +91,47 @@
       }
     }
   }
+  .mobile__navigation {
+    display: none;
+
+    @media only screen and (max-width: 412px) {
+      display: flex;
+      flex-direction: column;
+      gap: 6rem;
+      font-size: 3rem;
+      font-weight: 500;
+      position: absolute;
+      top: 7.5rem;
+      color: white;
+      width: 100%;
+      height: 100vh;
+      padding-top: 2rem;
+      padding-left: 2rem;
+      // transform: translateX(0);
+      right: 100rem;
+      transition: 1s ease-in;
+      background-image: linear-gradient(to bottom right, var(--color-gradient));
+    }
+  }
+  .movein-right {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    font-size: 3rem;
+    font-weight: 500;
+    position: absolute;
+    top: 7.5rem;
+    color: white;
+    width: 100%;
+    height: 100vh;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    // transform: translateX(100%);
+    right: 0;
+    background-image: linear-gradient(to bottom right, var(--color-gradient));
+    transition: 1s ease-in-out;
+  }
+
   .disp {
     @media only screen and (max-width: 412px) {
       display: none;
@@ -140,9 +166,9 @@
       line-height: 6.7rem;
     }
   }
-  &__slogan {
-    // color: rebeccapurple;
-  }
+  // &__slogan {
+  //   // color: rebeccapurple;
+  // }
   .cv {
     font-weight: 700;
     font-size: 1.5rem;
@@ -168,25 +194,33 @@
       border: 1px solid var(--color-tertiary);
       border-radius: 30rem;
       padding: 1rem;
-      color: var(--color-tertiary);
+      color: #1da1f2;
+      line-height: 0;
+      font-size: 2rem;
     }
     &-linkedin {
       border: 1px solid var(--color-tertiary);
       border-radius: 30rem;
       padding: 1rem;
-      color: var(--color-tertiary);
+      color: #0077b5;
+      line-height: 0;
+      font-size: 2rem;
     }
     &-github {
       border: 1px solid var(--color-tertiary);
       border-radius: 30rem;
       padding: 1rem;
-      color: var(--color-tertiary);
+      color: #1d1c1b;
+      line-height: 0;
+      font-size: 2rem;
     }
     &-gram {
       border: 1px solid var(--color-tertiary);
       border-radius: 30rem;
       padding: 1rem;
-      color: var(--color-tertiary);
+      color: #25d366;
+      line-height: 0;
+      font-size: 2rem;
     }
   }
 }
@@ -365,6 +399,7 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+
     &--left {
       width: 44%;
       background-color: var(--component-box-color);
@@ -388,6 +423,9 @@
         &:focus {
           outline: 1px solid var(--color-primary);
         }
+        @media only screen and (max-width: 412px) {
+          width: 100%;
+        }
       }
       &-field5 {
         flex-grow: 1;
@@ -405,32 +443,49 @@
       justify-content: center;
       gap: 2rem;
 
-      @media only screen and (max-width: 536px) {
+      @media only screen and (max-width: 512px) {
         width: 90%;
         margin-top: 2rem;
       }
       &-phone {
         display: flex;
         gap: 2rem;
+        align-items: center;
+        color: green;
+        @media only screen and (max-width: 412px) {
+          align-items: center;
+          font-size: 2.5rem;
+        }
       }
       &-Email {
         display: flex;
         gap: 2rem;
+        align-items: center;
+        color: orange;
+        @media only screen and (max-width: 412px) {
+          align-items: center;
+          font-size: 2.5rem;
+        }
       }
       &-Address {
         display: flex;
         gap: 2rem;
+        align-items: center;
+        color: red;
+        @media only screen and (max-width: 412px) {
+          align-items: center;
+          font-size: 2.5rem;
+        }
       }
       .call {
-        background-image: linear-gradient(
-          to bottom right,
-          var(--color-gradient)
-        );
-        color: white;
-        text-align: center;
-        padding: 2rem;
-        height: 0.5rem;
-        border-radius: 5rem;
+        // background-image: linear-gradient(
+        //   to bottom right,
+        //   var(--color-gradient)
+        // );
+        // color: white;
+        font-size: 2.5rem;
+        @media only screen and (max-width: 536px) {
+        }
       }
     }
   }
