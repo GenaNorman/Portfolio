@@ -47,7 +47,7 @@ export default function Head() {
       </header>
       <div className="container">
         <div className="container1">
-          <p className="container1__username">Hi there I'm Norman your</p>
+          <p className="container1__username">Hi, I'm Norman</p>
           <h1 className="container1__devtype">Web developer + UX Designer</h1>
           <i className="container__slogan">
             I break down complex 1user experinece problems to create integritiy

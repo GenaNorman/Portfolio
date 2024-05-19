@@ -16,6 +16,18 @@
 //     transform: scale(1.5);
 //   }
 // }
+@keyframes movinbolb {
+  0%,
+  100% {
+    border-radius: 41% 59% 37% 43% / 71% 48% 52% 49%;
+  }
+  50% {
+    border-radius: 41% 59% 57% 43% / 51% 48% 52% 49%;
+  }
+  80% {
+    border-radius: 52% 48% 57% 43% / 36% 24% 76% 64%;
+  }
+}
 @property --num {
   syntax: "<integer>";
   initial-value: 0;

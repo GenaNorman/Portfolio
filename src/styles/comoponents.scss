@@ -80,8 +80,16 @@
     }
     &-link {
       cursor: pointer;
+      font-weight: 600;
       color: var(--color-secondary);
-
+      &:hover {
+        transition: 0.5s ease-in;
+        transform: scale(1.1);
+        letter-spacing: 0.3rem;
+        background: linear-gradient(to right, var(--color-gradient));
+        -webkit-background-clip: text;
+        color: transparent;
+      }
       @media only screen and (max-width: 412px) {
         display: none;
         color: white;
@@ -237,8 +245,8 @@
     width: 60%;
     margin-top: 4rem;
     border-radius: 3rem;
-    background-blend-mode: screen;
-
+    animation: movinbolb 9s infinite;
+    transition: all 3s;
     @media only screen and (max-width: 536px) {
       width: 85%;
     }
