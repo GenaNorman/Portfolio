@@ -4,7 +4,7 @@ export default function Myquality() {
   return (
     <div className="block">
       <div className="title">
-        <h1 className="title__name">My quality services</h1>
+        <h1 className="title__name">My services</h1>
         <p className="title__slogan">
           We put your ideas and thus your wishes in the form of a unique web
           project that inspires you and you customers.

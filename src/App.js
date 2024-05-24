@@ -3,8 +3,8 @@ import Footer from "./components/Footer";
 import Myquality from "./components/Myquality";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-// import Reviews from "./components/Reviews";
-// import Skilled from "./components/Skilled";
+import Reviews from "./components/Reviews";
+import Skilled from "./components/Skilled";
 import Head from "./components/Head";
 
 function App() {
@@ -12,12 +12,12 @@ function App() {
     <div>
       <Head />
       <Myquality />
+      <Skilled />
       <Projects />
       <Contact />
-      <Footer />
-      {/* <Blogs />
       <Reviews />
-      <Skilled /> */}
+      <Footer />
+      {/* <Blogs /> */}
     </div>
   );
 }

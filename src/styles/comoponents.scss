@@ -341,6 +341,91 @@
     }
   }
 }
+// /////////////////////Skills
+.skills {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  margin-bottom: 10rem;
+  height: max-content;
+  @media only screen and (max-width: 412px) {
+    position: relative;
+  }
+  &::before {
+    content: "</>";
+    font-size: 20rem;
+    font-weight: 900;
+    font-family: sans-serif;
+    position: absolute;
+    z-index: -6;
+    right: 29rem;
+    top: rem;
+    // transform: translate(30%, 10%);
+    color: whitesmoke;
+    animation: zooming 9s infinite;
+
+    @media only screen and (max-width: 412px) {
+      position: absolute;
+      z-index: -6;
+      right: 6rem;
+      top: 5rem;
+    }
+  }
+  &_block {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    @media only screen and (max-width: 412px) {
+      display: flex;
+      // flex-direction: column;
+      gap: 1rem;
+
+      align-items: center;
+    }
+    &-skill {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      border: 1px solid var(--component-color);
+      padding: 3rem;
+      padding-bottom: 2rem;
+      border-radius: 1rem;
+    }
+    .icon {
+      font-size: 6rem;
+      @media only screen and (max-width: 412px) {
+        font-size: 10rem;
+      }
+      // z-index: -2;
+    }
+    .html {
+      color: #f06529;
+    }
+    .css {
+      color: blue;
+    }
+    .sass {
+      color: palevioletred;
+    }
+    .script {
+      color: yellow;
+    }
+    .git {
+      color: orangered;
+    }
+    .react {
+      color: blue;
+      animation: rotating 5s infinite;
+    }
+    .name {
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+  }
+}
 
 // //////////Projects
 .project {
