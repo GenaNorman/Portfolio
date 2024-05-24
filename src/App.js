@@ -14,8 +14,8 @@ function App() {
       <Myquality />
       <Skilled />
       <Projects />
-      <Contact />
       <Reviews />
+      <Contact />
       <Footer />
       {/* <Blogs /> */}
     </div>
