@@ -2,12 +2,12 @@ import React from "react";
 
 export default function Projects() {
   return (
-    <div>
+    <div className="block-p">
       <div className="title">
         <h1 className="title__name">My Recent Works</h1>
         <p className="title__slogan">
-          We put your ideas and thus your wishes in the form of a unique web
-          project that inspires you and you customers.
+          Each project showcases my ability to deliver innovative solutions and
+          highlights my technical expertise.
         </p>
       </div>
       <div className="project">

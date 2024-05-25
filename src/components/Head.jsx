@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { RiMenu3Fill } from "react-icons/ri";
+import { FiDownload } from "react-icons/fi";
 import { FaTwitter, FaWhatsapp, FaGithub } from "react-icons/fa";
 
 import { RxCross2 } from "react-icons/rx";
@@ -48,29 +49,31 @@ export default function Head() {
       <div className="container">
         <div className="container1">
           <p className="container1__username">Hi, I'm Norman</p>
-          <h1 className="container1__devtype">Web developer + UX Designer</h1>
+          <h1 className="container1__devtype">
+            Sofware Engineer + Devops Engineer
+          </h1>
           <i className="container__slogan">
-            I break down complex 1user experinece problems to create integritiy
-            focussed solutions that connect billions of people integritiy
-            focussed solutions that connect integritiy focussed solutions Lorem
-            ipsum dolor sit
+            I am a dedicated and passionate software engineer with a strong
+            background in developing innovative software solutions. With
+            experience in various programming languages and frameworks like
+            react and node.js
           </i>
           <div className="container1__media">
             <a href="download" className="btn cv">
-              Download cv
+              Download cv <FiDownload />
             </a>
-            <i className="container1__media-twiter">
-              <FaTwitter />
-            </i>
-            <i className="container1__media-linkedin">
+            <a
+              href="https://www.linkedin.com/in/gena-norman-kamando-58553828b/'[]  "
+              className="container1__media-linkedin"
+            >
               <FaLinkedin />
-            </i>
-            <i className="container1__media-github">
+            </a>
+            <a
+              href="https://github.com/GenaNorman"
+              className="container1__media-github"
+            >
               <FaGithub />
-            </i>
-            <i className="container1__media-gram">
-              <FaWhatsapp />
-            </i>
+            </a>
           </div>
         </div>
         <div className="container2">

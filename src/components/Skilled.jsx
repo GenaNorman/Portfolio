@@ -9,8 +9,8 @@ export default function Skilled() {
       <div className="title">
         <h1 className="title__name">Skills</h1>
         <p className="title__slogan">
-          We put your ideas and thus your wishes in the form of a unique web
-          project
+          My diverse skill set ensures that I can tackle a wide range of
+          projects and deliver high-quality solutions tailored to your needs.t
         </p>
       </div>
       <div className="skills_block">

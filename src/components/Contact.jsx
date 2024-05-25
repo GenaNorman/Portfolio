@@ -10,8 +10,9 @@ export default function Contact() {
         <div className="title">
           <h1 className="title__name">Get in Touch</h1>
           <p className="title__slogan">
-            We put your ideas and thus your wishes in the form of a unique web
-            project that inspires you and you customers.
+            Whether you have a question, need a consultation, or are ready to
+            start a new project, feel free to reach out using the information
+            below.
           </p>
         </div>
         <div className="contact__box">

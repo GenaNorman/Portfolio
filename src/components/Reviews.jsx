@@ -4,7 +4,7 @@ import { IoMdStar } from "react-icons/io";
 
 export default function Reviews() {
   return (
-    <div className="block">
+    <div className="blck">
       <div className="reviews">
         <div className="titl title-review">
           <h1 className="title__name">My Client's Stories</h1>
