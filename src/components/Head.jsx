@@ -81,20 +81,6 @@ export default function Head() {
           />
         </div>
       </div>
-      {/* <div className="counter">
-        <center className="years">
-          <p>years</p>
-        </center>
-        <center className="projects">
-          <p>projects</p>
-        </center>
-        <center className="clients">
-          <p>clients</p>
-        </center>
-        <center className="experience">
-          <p>experience</p>
-        </center>
-      </div> */}
     </>
   );
 }

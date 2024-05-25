@@ -159,6 +159,9 @@
     font-weight: 600;
 
     color: var(--color-secondary);
+    @media only screen and (max-width: 412px) {
+      margin-top: 4rem;
+    }
   }
   &__devtype {
     font-size: 4rem;
@@ -367,7 +370,7 @@
     @media only screen and (max-width: 412px) {
       position: absolute;
       z-index: -6;
-      right: 4rem;
+      right: 5rem;
       top: 25rem;
     }
   }
