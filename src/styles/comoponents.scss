@@ -178,9 +178,7 @@
       line-height: 4.5rem;
     }
   }
-  // &__slogan {
-  //   // color: rebeccapurple;
-  // }
+
   .cv {
     font-weight: 700;
     font-size: 1.5rem;
@@ -370,7 +368,7 @@
     z-index: -6;
     right: 29rem;
     top: rem;
-    // transform: translate(30%, 10%);
+
     color: whitesmoke;
     animation: zooming 9s infinite;
 
@@ -407,9 +405,7 @@
       font-size: 6rem;
       @media only screen and (max-width: 412px) {
         font-size: 10rem;
-        // z-index: -44;
       }
-      // z-index: -2;
     }
     .html {
       color: #f06529;
