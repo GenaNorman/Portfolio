@@ -48,9 +48,12 @@ export default function Head() {
       </header>
       <div className="container">
         <div className="container1">
-          <p className="container1__username">Hi, I'm Norman</p>
+          <p className="container1__username">
+            Hi, <br /> I'm Norman
+          </p>
           <h1 className="container1__devtype">
-            Sofware Engineer + Devops Engineer
+            Devops Engineer +
+            <br /> A Software Engineer
           </h1>
           <i className="container__slogan">
             I am a dedicated and passionate software engineer with a strong
